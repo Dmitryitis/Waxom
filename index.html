@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&family=Raleway:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="assets/css/style.min.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css">
+    
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js">
+     </script>
+    
+    
+     <!-- Useful meta tags -->
+     <meta http-equiv="x-ua-compatible" content="ie=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <meta name="robots" content="index, follow, noodp">
+     <meta name="googlebot" content="index, follow">
+     <meta name="google" content="notranslate">
+     <meta name="format-detection" content="telephone=no">
+     <meta name="keywords" content="">
+     <meta name="description" content="">
+    
+     <title>title</title>
+    
+    
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <svg style="display: none;">
+        <symbol id="cart">
+            <g>
+                <defs>
+                    <filter id="Filter_0">
+                        <feFlood flood-color="rgb(255, 255, 255)" flood-opacity="1" result="floodOut" />
+                        <feComposite operator="atop" in="floodOut" in2="SourceGraphic" result="compOut" />
+                        <feBlend mode="normal" in="compOut" in2="SourceGraphic" />
+                    </filter>
+    
+                </defs>
+                <g filter="url(#Filter_0)">
+                    <path fill-rule="evenodd" fill="rgb(0, 0, 0)" d="M23.762,22.681 L17.569,16.586 C19.190,14.825 20.187,12.494 20.187,9.929 C20.186,4.443 15.668,-0.002 10.093,-0.002 C4.519,-0.002 0.001,4.443 0.001,9.929 C0.001,15.416 4.519,19.862 10.093,19.862 C12.502,19.862 14.711,19.028 16.446,17.644 L22.663,23.763 C22.966,24.062 23.458,24.062 23.761,23.763 C24.065,23.464 24.065,22.979 23.762,22.681 ZM10.093,18.334 C5.377,18.334 1.553,14.572 1.553,9.929 C1.553,5.288 5.377,1.525 10.093,1.525 C14.810,1.525 18.633,5.288 18.633,9.929 C18.633,14.572 14.810,18.334 10.093,18.334 Z" />
+                </g>
+            </g>
+        </symbol>
+    
+        <symbol id="burg" viewBox="0 0 512 512">
+            <g>
+                <g>
+                    <path d="M492,236H20c-11.046,0-20,8.954-20,20c0,11.046,8.954,20,20,20h472c11.046,0,20-8.954,20-20S503.046,236,492,236z" />
+                </g>
+            </g>
+            <g>
+                <g>
+                    <path d="M492,76H20C8.954,76,0,84.954,0,96s8.954,20,20,20h472c11.046,0,20-8.954,20-20S503.046,76,492,76z" />
+                </g>
+            </g>
+            <g>
+                <g>
+                    <path d="M492,396H20c-11.046,0-20,8.954-20,20c0,11.046,8.954,20,20,20h472c11.046,0,20-8.954,20-20
+                C512,404.954,503.046,396,492,396z" />
+                </g>
+            </g>
+        </symbol>
+    
+        <symbol id="arrow" viewBox="0 0 490.8 490.8">
+            <g>
+                <path style="fill:#F44336;" d="M135.685,3.128c-4.237-4.093-10.99-3.975-15.083,0.262c-3.992,4.134-3.992,10.687,0,14.82
+        l227.115,227.136L120.581,472.461c-4.237,4.093-4.354,10.845-0.262,15.083c4.093,4.237,10.845,4.354,15.083,0.262
+        c0.089-0.086,0.176-0.173,0.262-0.262l234.667-234.667c4.164-4.165,4.164-10.917,0-15.083L135.685,3.128z" />
+                <path d="M128.133,490.68c-5.891,0.011-10.675-4.757-10.686-10.648c-0.005-2.84,1.123-5.565,3.134-7.571l227.136-227.115
+        L120.581,18.232c-4.171-4.171-4.171-10.933,0-15.104c4.171-4.171,10.933-4.171,15.104,0l234.667,234.667
+        c4.164,4.165,4.164,10.917,0,15.083L135.685,487.544C133.685,489.551,130.967,490.68,128.133,490.68z" />
+            </g>
+        </symbol>
+    
+        <symbol id="pencil" viewBox="0 0 512 512">
+            <g>
+                <path d="m384.721 0-323.626 323.627-61.095 188.373 188.374-61.094 323.626-323.627zm84.853 127.279-42.427 42.427-84.853-84.853 42.426-42.427zm-388.611 232.331 71.427 71.428-32.036 10.39-49.782-49.782zm14.501-27.925 225.617-225.618 31.82 31.82-225.618 225.617zm53.032 53.032 225.618-225.619 31.82 31.82-225.618 225.619zm-88.313 38.965 28.136 28.136-41.642 13.505z" />
+            </g>
+        </symbol>
+    
+        <symbol id="paper" viewBox="0 0 33.283 33.283">
+            <g>
+                <path d="M0,11.526l16.64-9.292l16.643,9.292l-16.643,9.29L0,11.526z" />
+                <path d="M0,16.643l1.954-1.653l14.687,7.898l14.662-7.933l1.98,1.687l-16.643,9.29L0,16.643z" />
+                <path d="M0,21.762l1.954-1.654l14.687,7.9l14.662-7.935l1.98,1.689L16.64,31.049L0,21.762z" />
+            </g>
+        </symbol>
+    
+        <symbol id="gear" viewBox="0 0 490.667 490.667">
+            <g>
+                <path d="M488.683,214.592c-1.6-12.437-8.64-23.253-19.307-29.696c-10.475-6.315-23.125-7.488-34.837-3.115
+                c-9.301,3.456-19.712-1.323-23.936-10.752c-4.971-11.136-11.115-21.803-18.219-31.701c-6.165-8.576-5.013-19.84,2.645-26.155
+                c9.493-7.787,14.784-19.307,14.549-31.595c-0.256-12.48-6.123-24-16.149-31.573c-16.299-12.352-34.091-22.635-52.885-30.549
+                c-11.627-4.885-24.597-4.245-35.541,1.792c-10.752,5.909-18.091,16.256-20.096,28.373c-1.643,9.856-10.901,16.235-21.44,15.36
+                c-11.925-1.259-24.363-1.259-36.309,0c-10.688,0.875-19.797-5.483-21.419-15.339c-2.005-12.139-9.323-22.485-20.075-28.395
+                c-10.987-6.037-23.915-6.699-35.563-1.813c-18.816,7.936-36.608,18.219-52.885,30.549c-10.005,7.595-15.893,19.093-16.128,31.573
+                c-0.256,12.288,5.056,23.829,14.549,31.659c7.68,6.315,8.811,17.536,2.645,26.133c-7.125,9.941-13.269,20.587-18.219,31.68
+                c-4.245,9.472-14.763,14.208-24.149,10.667c-11.477-4.288-24.085-3.115-34.603,3.2c-10.667,6.421-17.728,17.237-19.328,29.675
+                C0.661,224.789,0,235.136,0,245.333s0.661,20.544,1.984,30.741c1.6,12.437,8.64,23.275,19.307,29.696
+                c10.517,6.336,23.147,7.552,34.859,3.115c9.131-3.392,19.669,1.28,23.915,10.752c4.949,11.093,11.093,21.76,18.219,31.701
+                c6.165,8.576,5.013,19.819-2.667,26.155c-9.472,7.787-14.763,19.307-14.528,31.595c0.256,12.48,6.123,24,16.128,31.595
+                c16.256,12.309,34.048,22.592,52.885,30.549c5.163,2.176,10.581,3.243,15.979,3.243c6.763,0,13.483-1.685,19.563-5.056
+                c10.752-5.909,18.091-16.277,20.096-28.373c1.643-9.856,11.008-16.405,21.44-15.339c11.925,1.259,24.363,1.259,36.309,0
+                c10.603-1.045,19.776,5.483,21.419,15.339c2.027,12.117,9.344,22.464,20.096,28.373c10.987,6.059,23.915,6.677,35.541,1.813
+                c18.816-7.936,36.608-18.219,52.885-30.549c10.005-7.595,15.872-19.115,16.128-31.595c0.235-12.288-5.077-23.808-14.592-31.616
+                c-7.659-6.315-8.789-17.536-2.624-26.133c7.125-9.899,13.248-20.587,18.219-31.68c4.267-9.493,14.848-14.144,23.936-10.773
+                l0.235,0.085c11.52,4.352,24.149,3.136,34.624-3.179c10.688-6.443,17.707-17.259,19.307-29.675
+                c1.344-10.155,2.005-20.501,2.005-30.784S490.005,224.704,488.683,214.592z M245.333,341.333c-52.928,0-96-43.072-96-96
+                s43.072-96,96-96c52.928,0,96,43.072,96,96S298.261,341.333,245.333,341.333z" />
+            </g>
+        </symbol>
+    
+        <symbol id="file" viewBox="0 0 512 512">
+            <g>
+                <g>
+                    <g>
+                        <path d="M403.626,85.731H139.537c-8.181,0-14.813-6.632-14.813-14.813v-7.412c0-8.341-6.762-15.103-15.103-15.103H30.206
+                C13.524,48.403,0,61.926,0,78.609v254.163l38.757-188.557c1.416-6.888,7.478-11.831,14.51-11.831h380.565v-16.447
+                C433.832,99.254,420.308,85.731,403.626,85.731z" />
+                    </g>
+                </g>
+                <g>
+                    <g>
+                        <path d="M481.79,162.01H65.345v0L7.058,445.577c-1.912,9.304,5.194,18.02,14.693,18.02h433.357
+                c15.397,0,28.33-11.581,30.023-26.885l26.682-241.174C513.792,177.649,499.787,162.01,481.79,162.01z" />
+                    </g>
+                </g>
+            </g>
+        </symbol>
+    
+        <symbol id="share" viewBox="0 0 512.092 512.092">
+            <g>
+                <g>
+                    <path d="M312.453,199.601c-6.066-6.102-12.792-11.511-20.053-16.128c-19.232-12.315-41.59-18.859-64.427-18.859
+                c-31.697-0.059-62.106,12.535-84.48,34.987L34.949,308.23c-22.336,22.379-34.89,52.7-34.91,84.318
+                c-0.042,65.98,53.41,119.501,119.39,119.543c31.648,0.11,62.029-12.424,84.395-34.816l89.6-89.6
+                c1.628-1.614,2.537-3.816,2.524-6.108c-0.027-4.713-3.87-8.511-8.583-8.484h-3.413c-18.72,0.066-37.273-3.529-54.613-10.581
+                c-3.195-1.315-6.867-0.573-9.301,1.877l-64.427,64.512c-20.006,20.006-52.442,20.006-72.448,0
+                c-20.006-20.006-20.006-52.442,0-72.448l108.971-108.885c19.99-19.965,52.373-19.965,72.363,0
+                c13.472,12.679,34.486,12.679,47.957,0c5.796-5.801,9.31-13.495,9.899-21.675C322.976,216.108,319.371,206.535,312.453,199.601z" />
+                </g>
+                <g>
+                    <g>
+                        <path d="M477.061,34.993c-46.657-46.657-122.303-46.657-168.96,0l-89.515,89.429c-2.458,2.47-3.167,6.185-1.792,9.387
+                c1.359,3.211,4.535,5.272,8.021,5.205h3.157c18.698-0.034,37.221,3.589,54.528,10.667c3.195,1.315,6.867,0.573,9.301-1.877
+                l64.256-64.171c20.006-20.006,52.442-20.006,72.448,0c20.006,20.006,20.006,52.442,0,72.448l-80.043,79.957l-0.683,0.768
+                l-27.989,27.819c-19.99,19.965-52.373,19.965-72.363,0c-13.472-12.679-34.486-12.679-47.957,0
+                c-5.833,5.845-9.35,13.606-9.899,21.845c-0.624,9.775,2.981,19.348,9.899,26.283c9.877,9.919,21.433,18.008,34.133,23.893
+                c1.792,0.853,3.584,1.536,5.376,2.304c1.792,0.768,3.669,1.365,5.461,2.048c1.792,0.683,3.669,1.28,5.461,1.792l5.035,1.365
+                c3.413,0.853,6.827,1.536,10.325,2.133c4.214,0.626,8.458,1.025,12.715,1.195h5.973h0.512l5.12-0.597
+                c1.877-0.085,3.84-0.512,6.059-0.512h2.901l5.888-0.853l2.731-0.512l4.949-1.024h0.939c20.961-5.265,40.101-16.118,55.381-31.403
+                l108.629-108.629C523.718,157.296,523.718,81.65,477.061,34.993z" />
+                    </g>
+                </g>
+            </g>
+        </symbol>
+    
+        <symbol id="lupa" viewBox="0 0 512 512">
+            <g>
+                <g>
+                    <g>
+                        <path d="M308.905,88.694c-11.965-11.964-25.646-21.816-40.663-29.282c-3.797-1.887-8.402-0.34-10.289,3.456
+                c-1.887,3.796-0.34,8.402,3.456,10.289c13.527,6.724,25.855,15.603,36.641,26.391c54.54,54.54,54.54,143.284,0,197.824
+                c-26.42,26.421-61.548,40.971-98.911,40.971c-37.365,0-72.492-14.55-98.912-40.971c-26.421-26.42-40.971-61.548-40.971-98.912
+                c0-37.364,14.55-72.492,40.971-98.912c15.939-15.939,34.827-27.48,56.137-34.303c20.339-6.511,42.287-8.288,63.466-5.139
+                c4.198,0.625,8.099-2.27,8.721-6.463c0.622-4.193-2.27-8.097-6.463-8.72c-23.493-3.493-47.839-1.522-70.405,5.703
+                c-23.328,7.468-44.876,20.632-62.312,38.068c-29.319,29.319-45.466,68.301-45.466,109.766c0,41.465,16.147,80.447,45.466,109.766
+                c29.32,29.32,68.302,45.467,109.767,45.467c41.463,0,80.446-16.147,109.766-45.467C369.43,247.7,369.43,149.219,308.905,88.694z" />
+                    </g>
+                </g>
+                <g>
+                    <g>
+                        <path d="M499.76,441.314L365.463,307.019c23.859-36.733,34.945-80.778,31.279-124.757c-3.891-46.686-24.299-90.672-57.463-123.856
+                C301.646,20.751,251.744,0.008,198.765,0c-0.013,0-0.018,0-0.031,0C145.768,0,95.867,20.728,58.232,58.363
+                c-77.472,77.473-77.471,203.53,0.001,281.002c33.183,33.183,77.174,53.605,123.871,57.504
+                c43.996,3.672,88.044-7.409,124.785-31.276l134.296,134.295c8.075,8.075,18.68,12.112,29.287,12.112s21.213-4.037,29.288-12.112
+                C515.908,483.739,515.908,457.463,499.76,441.314z M488.906,489.034c-10.166,10.165-26.704,10.164-36.868,0L313.275,350.27
+                c-1.485-1.485-3.451-2.248-5.429-2.248c-1.526,0-3.061,0.454-4.388,1.38c-34.843,24.301-77.477,35.725-120.076,32.171
+                c-43.084-3.598-83.674-22.442-114.293-53.062C-2.4,257.024-2.401,140.705,69.087,69.217
+                c34.738-34.738,80.778-53.867,129.647-53.867c0.009,0,0.02,0,0.029,0c48.878,0.007,94.926,19.152,129.66,53.907
+                c30.602,30.62,49.433,71.206,53.023,114.281c3.543,42.501-7.837,85.056-32.041,119.856c-5.209,6.443-19.6,23.681-26.66,29.802
+                c-3.203,2.777-3.548,7.624-0.771,10.826c1.518,1.751,3.655,2.647,5.802,2.647c1.782,0,3.573-0.617,5.025-1.876
+                c6.502-5.638,16.965-17.801,23.319-25.41l132.786,132.785C499.069,462.331,499.069,478.87,488.906,489.034z" />
+                    </g>
+                </g>
+            </g>
+        </symbol>
+    
+        <symbol id="play" viewBox="0 0 512 512">
+            <g>
+                <g fill="#fff">
+                    <path d="m354.2,247.4l-135.1-92.4c-4.2-3.1-15.4-3.1-16.3,8.6v184.8c1,11.7 12.4,11.9 16.3,8.6l135.1-92.4c3.5-2.1 8.3-10.7 0-17.2zm-130.5,81.3v-145.4l106.1,72.7-106.1,72.7z" />
+                    <path d="M256,11C120.9,11,11,120.9,11,256s109.9,245,245,245s245-109.9,245-245S391.1,11,256,11z M256,480.1    C132.4,480.1,31.9,379.6,31.9,256S132.4,31.9,256,31.9S480.1,132.4,480.1,256S379.6,480.1,256,480.1z" />
+                </g>
+            </g>
+        </symbol>
+    
+        <symbol viewBox="0 0 271.953 271.953" id="pause">
+            <g>
+                <g>
+                    <path style="fill:white;" d="M135.977,271.953c75.097,0,135.977-60.879,135.977-135.977S211.074,0,135.977,0S0,60.879,0,135.977
+                S60.879,271.953,135.977,271.953z M135.977,21.756c62.979,0,114.22,51.241,114.22,114.22s-51.241,114.22-114.22,114.22
+                s-114.22-51.241-114.22-114.22S72.992,21.756,135.977,21.756z" />
+                    <path style="fill:white;" d="M110.707,200.114c7.511,0,13.598-6.086,13.598-13.598V83.174c0-7.511-6.086-13.598-13.598-13.598
+                c-7.511,0-13.598,6.086-13.598,13.598v103.342C97.109,194.028,103.195,200.114,110.707,200.114z" />
+                    <path style="fill:white;" d="M165.097,200.114c7.511,0,13.598-6.086,13.598-13.598V83.174c0-7.511-6.086-13.598-13.598-13.598
+                S151.5,75.663,151.5,83.174v103.342C151.5,194.028,157.586,200.114,165.097,200.114z" />
+                </g>
+            </g>
+        </symbol>
+    
+    </svg>
+
+    <!--Header-->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__logo wow fadeInLeft">
+                    <img src="../../assets/img/logos.png" alt="" class="header__icon">
+                    <p class="header__text">Waxom</p>
+                </div>
+                <nav class="nav wow fadeInRight" id="nav">
+                    <a href="#" class="nav__link" data-scroll="#intro">Home</a>
+                    <a href="#" class="nav__link" data-scroll="#about">About Us</a>
+                    <a href="#" class="nav__link" data-scroll="#portfolio">Portfolio</a>
+                    <a href="#" class="nav__link" data-scroll="#features">Features</a>
+                    <a href="#" class="nav__link" data-scroll="#blog">Blog</a>
+                    <a href="#" class="nav__link" data-scroll="#short">Shortcodes</a>
+                    <a href="#" class="nav__link" data-scroll="#contact">Contact</a>
+    
+                    <div class="header__icons">
+                        <a href="#" class="header__cart hel">
+                            <img src="../../assets/img/icon-cart.png" alt="">
+                        </a>
+                        <a href="#" class="header__cart hel">
+                            <img src="../../assets/img/icon-search.png" alt="">
+                        </a>
+                    </div>
+                </nav>
+    
+                <button class="burger" type="button" id="burger">
+                    <svg class="burger__icon">
+                        <use xlink:href="#burg"></use>
+                    </svg>
+                </button>
+    
+                <a href="#" class="header__cart dis">
+                    <img src="../../assets/img/icon-search.png" alt="">
+                </a>
+    
+            </div>
+        </div>
+    </header>
+
+    
+    <!--Intro-->
+       <div class="intro">
+        <div class="container">
+            <div class="intro__inner">
+    
+                <button class="intro__arrow intro__arrow--prev" type="button" id="intro-arrow-prev">
+                    <svg class="intro__arrow-icon">
+                        <use xlink:href="#arrow"></use>
+                    </svg>
+                </button>
+    
+                <button class="intro__arrow intro__arrow--next" type="button" id="intro-arrow-next">
+                    <svg class="intro__arrow-icon">
+                        <use xlink:href="#arrow"></use>
+                    </svg>
+                </button>
+    
+                <div class="intro__content" id="intro">
+                    <div>
+                        <div class="intro__subtitle">Unique and Modern Design</div>
+                        <div class="intro__title">Portfolio PSD Template</div>
+                        <div class="intro__text">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet <br> doming id quod mazim placerat facer possim assum.</div>
+                        <a class="intro__btn" href="#">Get Started</a>
+    
+                    </div>
+    
+                    <div>
+    
+                        <div class="intro__subtitle">Unique</div>
+                        <div class="intro__title">Portfolio PSD Template</div>
+                        <div class="intro__text">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet <br> doming id quod mazim placerat facer possim assum.</div>
+                        <a class="intro__btn" href="#">Get Started</a>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <!--Function-->
+    <div class="function">
+        <div class="container">
+            <div class="function__inner">
+    
+                <div class="function__item">
+                    <div class="function__logo">
+                        <svg class="function__icon">
+                            <use xlink:href="#pencil"></use>
+                        </svg>
+                    </div>
+                    <div class="function__title">Web & App Design</div>
+                    <div class="function__text">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.</div>
+                </div>
+    
+                <div class="function__item">
+                    <div class="function__logo">
+                        <svg class="function__icon">
+                            <use xlink:href="#paper"></use>
+                        </svg>
+                    </div>
+                    <div class="function__title">Development</div>
+                    <div class="function__text">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.</div>
+                </div>
+    
+                <div class="function__item">
+                    <div class="function__logo">
+                        <svg class="function__icon">
+                            <use xlink:href="#gear"></use>
+                        </svg>
+                    </div>
+                    <div class="function__title">Customization</div>
+                    <div class="function__text">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.</div>
+                </div>
+    
+                <div class="function__item">
+                    <div class="function__logo">
+                        <svg class="function__icon">
+                            <use xlink:href="#file"></use>
+                        </svg>
+                    </div>
+                    <div class="function__title">Marketing</div>
+                    <div class="function__text">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.</div>
+                </div>
+    
+            </div>
+        </div>
+    </div>
+    
+    <!--About-->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section__header">
+                <div class="wow fadeInDown section__title">Waxom is Realization of your Ideas.</div>
+                <div class="section__text wow fadeInUp">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</div>
+            </div>
+    
+            <div class="about">
+                <img class="about__photo wow fadeInLeft" src="assets/img/bg.png" alt="">
+            </div>
+        </div>
+    </section>
+    
+    
+    
+    
+    <div class="about__footer">
+        <div class="container">
+            <div class="about__footer-inner">
+                <div class="about__footer-info">
+                    <div class="about__footer-title wow fadeInLeft"> <r class="about-change">Waxom</r> Multipurpose WordPress Theme</div>
+                    <div class="about__footer-text wow fadeInLeft">Don't forget to Rate the Template. Thanks so much!</div>
+                </div>
+                <a class="about__btn wow fadeInRight" href="#">Purchase Now</a>
+            </div>
+        </div>
+    </div>
+    
+    <!--Portfolio-->
+    <section class="section section--portfolio" id="portfolio">
+        <div class="container">
+    
+            <div class="section__header">
+                <div class="section__title wow fadeInDown">Our Latest Projects.</div>
+                <div class="section__text wow fadeInUp">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</div>
+            </div>
+    
+            <div class="portfolio">
+    
+                <nav class="portfolio__nav wow fadeInRight">
+                    <a class="portfolio__nav-link" href="#" data-filter="all">All</a>
+                    <a class="portfolio__nav-link" href="#" data-filter="web">Web Design</a>
+                    <a class="portfolio__nav-link" href="#" data-filter="mobile">Mobile App</a>
+                    <a class="portfolio__nav-link" href="#" data-filter="illustration">Illustration</a>
+                    <a class="portfolio__nav-link" href="#" data-filter="photography">Photography</a>
+                </nav>
+    
+                <div class="portfolio__inner">
+    
+                    <div class="portfolio__item" data-cat="web">
+                        <div class="portfolio__photo">
+                            <img src="assets/img/1.jpg" alt="" class="portfolio__img">
+                            <div class="portfolio__icons">
+                                <svg class="portfolio__share">
+                                    <use xlink:href="#share"></use>
+                                </svg>
+                                <svg class="portfolio__lupa">
+                                    <use xlink:href="#lupa"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="portfolio__content">
+                            <div class="portfolio__title">Claritas Etiam Processus</div>
+                            <div class="portfolio__text">Pdhotography, Nature</div>
+                        </div>
+                    </div>
+    
+                    <div class="portfolio__item" data-cat="illustration">
+                        <div class="portfolio__photo">
+                            <img src="assets/img/2.jpg" alt="" class="portfolio__img">
+                            <div class="portfolio__icons">
+                                <svg class="portfolio__share">
+                                    <use xlink:href="#share"></use>
+                                </svg>
+                                <svg class="portfolio__lupa">
+                                    <use xlink:href="#lupa"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="portfolio__content">
+                            <div class="portfolio__title">Claritas Etiam Processus</div>
+                            <div class="portfolio__text">Pdhotography, Nature</div>
+                        </div>
+                    </div>
+    
+                    <div class="portfolio__item" data-cat="photography">
+                        <div class="portfolio__photo">
+                            <img src="assets/img/3.jpg" alt="" class="portfolio__img">
+                            <div class="portfolio__icons">
+                                <svg class="portfolio__share">
+                                    <use xlink:href="#share"></use>
+                                </svg>
+                                <svg class="portfolio__lupa">
+                                    <use xlink:href="#lupa"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="portfolio__content">
+                            <div class="portfolio__title">Claritas Etiam Processus</div>
+                            <div class="portfolio__text">Pdhotography, Nature</div>
+                        </div>
+                    </div>
+    
+                    <div class="portfolio__item" data-cat="web">
+                        <div class="portfolio__photo">
+                            <img src="assets/img/4.jpg" alt="" class="portfolio__img">
+                            <div class="portfolio__icons">
+                                <svg class="portfolio__share">
+                                    <use xlink:href="#share"></use>
+                                </svg>
+                                <svg class="portfolio__lupa">
+                                    <use xlink:href="#lupa"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="portfolio__content">
+                            <div class="portfolio__title">Claritas Etiam Processus</div>
+                            <div class="portfolio__text">Pdhotography, Nature</div>
+                        </div>
+                    </div>
+    
+                    <div class="portfolio__item" data-cat="mobile">
+                        <div class="portfolio__photo">
+                            <img src="assets/img/5.jpg" alt="" class="portfolio__img">
+                            <div class="portfolio__icons">
+                                <svg class="portfolio__share">
+                                    <use xlink:href="#share"></use>
+                                </svg>
+                                <svg class="portfolio__lupa">
+                                    <use xlink:href="#lupa"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="portfolio__content">
+                            <div class="portfolio__title">Claritas Etiam Processus</div>
+                            <div class="portfolio__text">Pdhotography, Nature</div>
+                        </div>
+                    </div>
+    
+                    <div class="portfolio__item" data-cat="web">
+                        <div class="portfolio__photo">
+                            <img src="assets/img/6.jpg" alt="" class="portfolio__img">
+                            <div class="portfolio__icons">
+                                <svg class="portfolio__share">
+                                    <use xlink:href="#share"></use>
+                                </svg>
+                                <svg class="portfolio__lupa">
+                                    <use xlink:href="#lupa"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="portfolio__content">
+                            <div class="portfolio__title">Claritas Etiam Processus</div>
+                            <div class="portfolio__text">Pdhotography, Nature</div>
+                        </div>
+                    </div>
+                    <div class="portfolio__btn-inner">
+                        <button class="portfolio__btn" type="button" href="#">Load More</button>
+                    </div>
+    
+                </div>
+            </div>
+    
+        </div>
+    </section>
+    
+    
+    <!--Video-->
+    <div class="video__inner">
+        <div class="video">
+            <video src="assets/img/video/coverr-someone-is-working-there-are-headphones-on-the-table-6162.mp4" muted loop disablePictureInPicture class="video__media">
+            </video>
+        </div>
+    
+        <div class="video__content">
+    
+            <div class="video__info">
+                <button type="button" class="video__play">
+                    <svg class="play__icon">
+                        <use xlink:href="#play"></use>
+                    </svg>
+    
+                    <svg class="pause__icon">
+                        <use xlink:href="#pause"></use>
+                    </svg>
+                </button>
+                <div class="video__title wow fadeInLeft">Waxom Video Presentation</div>
+                <div class="video__text wow fadeInRight">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius, qui sequitur mutationem consuetudium.</div>
+                <div class="video__timer"></div>
+            </div>
+        </div>
+    
+    </div>
+    
+    <div class="mobile" id="features">
+        <div class="container">
+            <div class="mobile__inner">
+                <div class="mobile__photo wow fadeInLeft">
+                    <img class="mobile__img" src="assets/img/iPhone%20in%20hand.png" alt="">
+                </div>
+    
+                <div class="mobile__content">
+                    <div class="mobile__title wow fadeInRight">Excellent for Mobile Devices.</div>
+                    <div class="mobile__text wow fadeInRight">Qisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius claritas. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</div>
+                    <ul class="mobile__list">
+                        <li class="mobile__list-item wow fadeInUp">
+                            <div class="list__icon"></div>
+                            <p class="list__text">Nam liber tempor cum soluta nobis eleifend option;</p>
+                        </li>
+                        <li class="mobile__list-item wow fadeInUp">
+                            <div class="list__icon"></div>
+                            <p class="list__text">Option congue nihil imperdiet doming id quod mazim placerat facer;</p>
+                        </li>
+                        <li class="mobile__list-item wow fadeInUp">
+                            <div class="list__icon"></div>
+                            <p class="list__text">Eodem modo typi, qui nunc nobis videntur parum futurum;</p>
+                        </li>
+                        <li class="mobile__list-item wow fadeInUp">
+                            <div class="list__icon"></div>
+                            <p class="list__text">E nvestigationes demonstraverunt lectores</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="counters wow fadeInLeft">
+        <div class="container">
+            <div class="counters__inner">
+    
+                <div class="counters__item">
+                    <div class="counters__logo">
+                        <img src="assets/img/people.png" alt="" class="counters__img">
+                    </div>
+                    <div class="counters__count">3587</div>
+                    <div class="counters__title">Satisfied Clients</div>
+                </div>
+    
+                <div class="counters__item">
+                    <div class="counters__logo">
+                        <img src="assets/img/cofe.png" alt="" class="counters__img">
+                    </div>
+                    <div class="counters__count">207</div>
+                    <div class="counters__title">cups of coffee</div>
+                </div>
+    
+                <div class="counters__item">
+                    <div class="counters__logo">
+                        <img src="assets/img/message.png" alt="" class="counters__img">
+                    </div>
+                    <div class="counters__count">2500</div>
+                    <div class="counters__title">blog posts</div>
+                </div>
+    
+                <div class="counters__item">
+                    <div class="counters__logo">
+                        <img src="assets/img/like.png" alt="" class="counters__img">
+                    </div>
+                    <div class="counters__count">873</div>
+                    <div class="counters__title">likes</div>
+                </div>
+    
+                <div class="counters__item">
+                    <div class="counters__logo">
+                        <img src="assets/img/zvonok.png" alt="" class="counters__img">
+                    </div>
+                    <div class="counters__count">900</div>
+                    <div class="counters__title">We launched</div>
+                </div>
+    
+            </div>
+        </div>
+    </div>
+    
+    <section class="section section--post" id="blog">
+        <div class="container">
+    
+            <div class="section__header">
+                <div class="section__title wow fadeInDown">Recent Posts.</div>
+                <div class="section__text wow fadeInUp">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</div>
+            </div>
+    
+            <div class="post__inner">
+                <div class="post__slider-arrow">
+                    <button class="post__arrow post__arrow--prev" type="button" id="post__arrow-prev"></button>
+    
+    
+                    <button class="post__arrow post__arrow--next" type="button" id="post__arrow-next"></button>
+                </div>
+    
+                <div class="post" id="post">
+    
+                    <div class="post__item">
+                        <div class="post__photo">
+                            <img class="post__img" src="assets/img/post-photo1.jpg" alt="">
+                            <div class="post__data">
+                                <div class="post__data-header">
+                                    <div class="post__data-count">30</div>
+                                </div>
+                                <div class="post__data-month">Sep.</div>
+                            </div>
+                        </div>
+    
+                        <div class="post__content">
+                            <div class="post__title">Lorem ipsum dolor sit amet</div>
+                            <div class="post__text">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</div>
+                            <div class="post__link">
+                                <a class="post__link-link" href="#">Read More</a>
+                                <a class="post__link-icon" href="#">
+                                    <img src="assets/img/arrow.png" alt="" class="post__link-img">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="post__item">
+                        <div class="post__photo">
+                            <img class="post__img" src="assets/img/post-photo2.jpg" alt="">
+                            <div class="post__data">
+                                <div class="post__data-header">
+                                    <div class="post__data-count">30</div>
+                                </div>
+                                <div class="post__data-month">Sep.</div>
+                            </div>
+                        </div>
+    
+                        <div class="post__content">
+                            <div class="post__title">Lorem ipsum dolor sit amet</div>
+                            <div class="post__text">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</div>
+                            <div class="post__link">
+                                <a class="post__link-link" href="#">Read More</a>
+                                <a class="post__link-icon" href="#">
+                                    <img src="assets/img/arrow.png" alt="" class="post__link-img">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="post__item">
+                        <div class="post__photo">
+                            <img class="post__img" src="assets/img/post-photo3.jpg" alt="">
+                            <div class="post__data">
+                                <div class="post__data-header">
+                                    <div class="post__data-count">30</div>
+                                </div>
+                                <div class="post__data-month">Sep.</div>
+                            </div>
+                        </div>
+    
+                        <div class="post__content">
+                            <div class="post__title">Lorem ipsum dolor sit amet</div>
+                            <div class="post__text">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</div>
+                            <div class="post__link">
+                                <a class="post__link-link" href="#">Read More</a>
+                                <a class="post__link-icon" href="#">
+                                    <img src="assets/img/arrow.png" alt="" class="post__link-img">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!--slide-->
+                    <div class="post__item">
+                        <div class="post__photo">
+                            <img class="post__img" src="assets/img/post-photo1.jpg" alt="">
+                            <div class="post__data">
+                                <div class="post__data-header">
+                                    <div class="post__data-count">30</div>
+                                </div>
+                                <div class="post__data-month">Sep.</div>
+                            </div>
+                        </div>
+    
+                        <div class="post__content">
+                            <div class="post__title">Lorem ipsum dolor sit amet</div>
+                            <div class="post__text">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</div>
+                            <div class="post__link">
+                                <a class="post__link-link" href="#">Read More</a>
+                                <a class="post__link-icon" href="#">
+                                    <img src="assets/img/arrow.png" alt="" class="post__link-img">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="post__item">
+                        <div class="post__photo">
+                            <img class="post__img" src="assets/img/post-photo1.jpg" alt="">
+                            <div class="post__data">
+                                <div class="post__data-header">
+                                    <div class="post__data-count">30</div>
+                                </div>
+                                <div class="post__data-month">Sep.</div>
+                            </div>
+                        </div>
+    
+                        <div class="post__content">
+                            <div class="post__title">Lorem ipsum dolor sit amet</div>
+                            <div class="post__text">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</div>
+                            <div class="post__link">
+                                <a class="post__link-link" href="#">Read More</a>
+                                <a class="post__link-icon" href="#">
+                                    <img src="assets/img/arrow.png" alt="" class="post__link-img">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="post__item">
+                        <div class="post__photo">
+                            <img class="post__img" src="assets/img/post-photo1.jpg" alt="">
+                            <div class="post__data">
+                                <div class="post__data-header">
+                                    <div class="post__data-count">30</div>
+                                </div>
+                                <div class="post__data-month">Sep.</div>
+                            </div>
+                        </div>
+    
+                        <div class="post__content">
+                            <div class="post__title">Lorem ipsum dolor sit amet</div>
+                            <div class="post__text">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</div>
+                            <div class="post__link">
+                                <a class="post__link-link" href="#">Read More</a>
+                                <a class="post__link-icon" href="#">
+                                    <img src="assets/img/arrow.png" alt="" class="post__link-img">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <div class="partners" id="short">
+        <div class="container">
+            <div class="partners__inner">
+    
+                <a href="#" class="partners__item">
+                    <img src="assets/img/partners/logo-01.png" alt="" class="partners__logo">
+                </a>
+    
+                <a href="#" class="partners__item">
+                    <img src="assets/img/partners/logo-02.png" alt="" class="partners__logo">
+                </a>
+    
+                <a href="#" class="partners__item">
+                    <img src="assets/img/partners/logo-03.png" alt="" class="partners__logo">
+                </a>
+    
+                <a href="#" class="partners__item">
+                    <img src="assets/img/partners/logo-04.png" alt="" class="partners__logo">
+                </a>
+    
+            </div>
+        </div>
+    </div>
+    
+
+    <!--Footer-->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer__inner">
+    
+    
+                <div class="footer__waxom-post">
+                    <div class="footer__col footer__waxom">
+                        <div class="header__logo footer__logo">
+                            <img src="assets/img/logos.png" alt="" class="header__icon">
+                            <p class="header__text">Waxom</p>
+                        </div>
+                        <div class="footer__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci suscipit lobortis claritatem.</div>
+                        <a href="#" class="footer__link">
+                            <div class="footer__link-text">Read More</div>
+                            <div class="footer__link-img">
+                                <img src="assets/img/footer/arrow.png" alt="">
+                            </div>
+                        </a>
+                    </div>
+    
+                    <div class="footer__col footer__post">
+                        <div class="footer__title">
+                            Recent Posts
+                        </div>
+                        <div class="footer__item">
+                            <div class="footer__item-data">September 08,2015</div>
+                            <div class="footer__item-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</div>
+                        </div>
+    
+                        <div class="footer__item">
+                            <div class="footer__item-data">September 08,2015</div>
+                            <div class="footer__item-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</div>
+                        </div>
+    
+                        <div class="footer__item">
+                            <div class="footer__item-data">September 08,2015</div>
+                            <div class="footer__item-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</div>
+                        </div>
+    
+                    </div>
+    
+                </div>
+    
+                <!--Twitter-->
+    
+                <div class="footer__twit-widget">
+    
+                    <div class="footer__col footer__twitter">
+                        <div class="footer__title">
+                            Our Twitter
+                        </div>
+                        <div class="footer__item footer__item--twitter">
+                            <div class="footer__item-data footer--twitter__data">3mins ago</div>
+                            <div class="footer__item-text footer--twitter__text"><a class="twitter__link" href="#">@waxom</a> Cum soluta nobis eleifend option congue nihil imperdiet doming</div>
+                        </div>
+    
+                        <div class="footer__item footer__item--twitter">
+                            <div class="footer__item-data footer--twitter__data">3mins ago</div>
+                            <div class="footer__item-text footer--twitter__text">Mirum est <a class="twitter__link" href="#">#envato</a> notare quam littera gothica, quam nunc putamus parum anteposuerit litterarum</div>
+                        </div>
+    
+                        <div class="footer__item footer__item--twitter">
+                            <div class="footer__item-data footer--twitter__data">3mins ago</div>
+                            <div class="footer__item-text footer--twitter__text">Soluta nobis option <a href="#" class="twitter__text">bit.ly/1Hniso7</a></div>
+                        </div>
+    
+                    </div>
+    
+                    <!--Dribble Widget-->
+                    <div class="footer__col footer__widget">
+                        <div class="footer__title">
+                            Dribble Widget
+                        </div>
+    
+                        <div class="footer__widget-item">
+                            <div class="footer__widget-photo helper">
+                                <img src="assets/img/footer/widget1.jpg" alt="" class="footer__widget-img">
+                            </div>
+                            <div class="footer__widget-photo">
+                                <img src="assets/img/footer/widget2.jpg" alt="" class="footer__widget-img">
+                            </div>
+                        </div>
+    
+                        <div class="footer__widget-item">
+                            <div class="footer__widget-photo helper">
+                                <img src="assets/img/footer/widget3.jpg" alt="" class="footer__widget-img">
+                            </div>
+                            <div class="footer__widget-photo">
+                                <img src="assets/img/footer/widget4.jpg" alt="" class="footer__widget-img">
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+    
+    
+            </div>
+        </div>
+    </footer>
+
+    <div class="copyright">
+        <div class="container">
+            <div class="copyright__inner">
+                <div class="copyright__item">
+                    <div class="copyright__info">Copyright © 2015 <r class="white"> Waxom</r>
+                    </div>
+                    <div class="copyright__info">Privace</div>
+                    <div class="copyright__info">Fao</div>
+                    <div class="copyright__info">Support</div>
+                </div>
+                <div class="copyright__item">
+                    <div class="copyright__info">Designed by <r class="white">ThemeFire</r></div>
+                    <div class="copyright__info">Only on Envato Market</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/app.min.js"></script>
+    <script>
+        new WOW().init();
+
+    </script>
+
+</body>
+
+</html>
